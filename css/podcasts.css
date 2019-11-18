@@ -1,0 +1,331 @@
+body, html {
+	height:100%;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(17, 17, 17);
+  }
+
+* {
+	margin: 0px;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+.logo {
+	display: flex;
+	margin-right: 10px;
+	flex: 1.2;
+	font-family: "Pacifico", cursive;
+	text-align: center;
+	justify-content: space-around;
+}
+  
+header {
+	display: flex;
+	width: 100%;
+	height: 100px;
+	margin: auto;
+	align-items: center;
+}
+
+#nav {
+	width: 100%;
+	top: 0;
+	position: sticky;
+	height: 100px;
+	transition: top 0.7s;
+}
+  
+nav {
+	flex: 6.5;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	background-color: #eee;
+	box-sizing: border-box;
+	padding: 12px 18px;
+	box-shadow: 0px 4px 7px #777;
+	z-index: 3;
+}
+  
+.nav-sites {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+  
+  
+main iframe {
+	margin: 100px;
+	box-shadow: 0px 1px 3px #eee;
+}
+
+main {
+	background-color: rgb(199, 197, 197);
+}
+  
+.logo img {
+	width: 40px;
+}
+
+.imagegallery,  .map, .index, .reviews, .pints101, .feedback, .podcasts, .contactus, .members, .calendar {
+	text-decoration: none;
+	color: rgb(93, 93, 93);
+	font-family: "Staatliches", cursive;
+	font-size: 20px;
+  }
+.podcasts {
+	text-decoration: none;
+	color: rgb(224, 203, 63);
+	font-family: "Staatliches", cursive;
+	font-size: 20px;
+  }
+  .imagegallery:hover,  .map:hover, .index:hover, .reviews:hover, .pints101:hover, .feedback:hover, .podcasts:hover, .contactus:hover, .members:hover, .calendar:hover {
+	color: rgb(224, 203, 63);
+	border-color: rgb(93, 93, 93);
+  }
+  .imagegallery, .reviews, .map, .pints101, .feedback {
+	border-color: rgb(224, 203, 63);
+	border-style: solid;
+	border-left: transparent;
+	border-right: transparent;
+	border-top: transparent;
+	border-width: 1.5px;
+  }
+  .close {
+	text-decoration: none;
+	color: rgb(93, 93, 93);
+	font-family: "Staatliches", cursive;
+	font-size: 20px;
+	border-style: solid;
+	border-color: rgb(224, 203, 63);
+	border-width: 2px;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+  
+  }
+  .close:hover {
+	border-color: rgb(93, 93, 93);
+	color: rgb(224, 203, 63);
+  }
+  .logo-img {
+	width: 3%;
+  }
+  .logo-link {
+	text-decoration: none;
+	color:black;
+  }
+  
+#button {
+	flex: 1;
+	text-align: center;
+}
+  
+#button img {
+	height: 60px;
+	width: 70px;
+}
+
+#button:hover {
+	cursor: pointer;
+}
+  
+#slide-bar {
+	width: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	overflow-x: hidden;
+	z-index: 3;
+	position: fixed;
+	top: 0;
+	right: 0px;
+	background-color: #eee;
+	transition: 0.6s ease-out;
+	padding: 40px 0;
+	box-shadow: -4px 0px 7px #777;
+}
+
+#slide-bar ul {
+	flex-direction: column;
+}
+  
+#slide-bar li {
+	display: block;
+	width: 100%;
+	flex: 1;
+	text-align: center;
+}
+
+#podcast-wrapper {
+    background: #fff;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#comment-wrapper {
+    background: #fff;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#main-content {
+    background: #eee;
+    height: 500px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+#main-content h1 {
+    font-family: "Pacifico", cursive;
+    padding-left: 20px;
+    padding-top: 30px;
+	background-color:#f0ac19;	
+}
+
+#main-content h2 {
+    font-family: "Staatliches", cursive;
+    font-size: 30px;
+    padding-left: 54px;
+    padding-top: 20px;
+}
+.podcast-container {
+	display: flex;
+}
+
+#description {
+	width: 55%;
+	height: 70%;
+	background-color: #422970;
+	box-shadow: -4px 5px 7px #383838;
+	margin: 1%;
+}
+
+#description h4 {
+    color: #eee;
+	margin-top: 10px;
+	margin-left: 15px;
+    font-family: "Staatliches", cursive;
+    font-size: 23px;
+
+}
+
+#description p {
+    color: #eee;
+	margin-top: 15px;
+	margin-left: 15px;
+	font-family: "Gill Sans", sans-serif;
+	font-size: 1.2vw;
+}
+
+#container {
+    float: left;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+.container img {
+    width: 68%;
+    height: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(32, 32, 32, 0.466);
+    margin-left: 54px;
+}
+
+#podcast-comments {
+	background: #eee;
+	width: 100%;
+    height: 600px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+#podcast-comments h2{
+    font-family: "Staatliches", cursive;
+    background-color: #422970;
+    color: #eee;
+    font-size: 50px;
+    padding-left: 20px;
+}
+
+#respond {
+    float: left;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: "Gill Sans", sans-serif;
+}
+
+#respond h2 {
+    font-family: "Staatliches", cursive;
+    padding-top: 40px;
+    background-color: #422970;
+    color: #eee;
+}
+
+#comment {
+    background-color: grey;
+	border-radius: 10px;
+	width: 90%;
+	height: 20%;
+	margin-top: 50%;
+    border-style: solid;
+	border-color:black;
+	margin-left: 5%;
+}
+.comment-content-container {
+	display: flex;
+}
+#comment h4 {
+    background-color: #422970;
+	color: #eee;
+	font-size: 1.2vw;
+}
+
+#comment p { 
+	margin-top: 3%;
+	margin-left: 5%;
+	font-size: 1vw;
+}
+
+#comment img {
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 50px;
+    height: 50px;
+    border-style:solid;
+    border-width:1px;
+    border-color:black;
+}
+
+#audio-player {
+    margin-left: 55px;
+}
+
+footer {
+	background-color: #eee;
+	padding: 12px 30px;
+	box-shadow: 0px -4px 7px #777;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+  
+#footer-text {
+	font-family: "Staatliches", cursive;
+	color: rgb(93, 93, 93);
+	flex: 4;
+}

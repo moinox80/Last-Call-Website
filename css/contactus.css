@@ -1,0 +1,148 @@
+
+
+
+.imagegallery,  .map, .index, .reviews, .pints101, .feedback, .podcasts, .contactus, .members, .calendar {
+  text-decoration: none;
+  color: rgb(93, 93, 93);
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+}
+.contactus {
+  text-decoration: none;
+  color: rgb(224, 203, 63);
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+}
+.imagegallery:hover,  .map:hover, .index:hover, .reviews:hover, .pints101:hover, .feedback:hover, .podcasts:hover, .contactus:hover, .members:hover, .calendar:hover {
+  color: rgb(224, 203, 63);
+  border-color: rgb(93, 93, 93);
+}
+.imagegallery, .reviews, .map, .pints101, .feedback {
+  border-color: rgb(224, 203, 63);
+  border-style: solid;
+  border-left: transparent;
+  border-right: transparent;
+  border-top: transparent;
+  border-width: 1.5px;
+}
+.close {
+  text-decoration: none;
+  color: rgb(93, 93, 93);
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+  border-style: solid;
+  border-color: rgb(224, 203, 63);
+  border-width: 2px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.close:hover {
+  border-color: rgb(93, 93, 93);
+  color: rgb(224, 203, 63);
+}
+.logo-img {
+  width: 3%;
+}
+.logo-link {
+  text-decoration: none;
+  color:black;
+}
+
+body {
+  font-family: "Bitter"; 
+  }
+
+.title {
+  font-size: 100px;
+  margin-left: 1%;
+  font-family: "Staatliches", cursive;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom-style: solid;
+  padding: 100px;
+}
+
+.alc {
+  display: inline-block;
+}
+
+.details {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.societyHead {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.societyHead h3 {
+  font-family: "Staatliches", cursive;
+  font-size: 40px;
+}
+
+.text{
+  float: left;
+  padding-right: 50px;
+}
+
+.head {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.help{
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+.social-links {
+  display: flex;
+  align-content: space-around;
+}
+.studentHelp {
+  margin-top: 50px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.alcoholHelp h3 {
+  font-family: "Staatliches", cursive;
+  font-size: 40px;
+}
+.studentHelp h3 {
+  font-family: "Staatliches", cursive;
+  font-size: 40px;
+}
+
+.student {
+  float: right;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.alcoholHelp {
+  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.moreText {
+  margin-left: 10px;
+  margin-top: 1%;
+  float: right;
+}
+
+.stuff {
+  display: inline-block;
+}
+
+.alcohol {
+  float: left;
+  width: 200px;
+  border-radius: 50%;
+}

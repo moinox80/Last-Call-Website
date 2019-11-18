@@ -1,0 +1,419 @@
+* {
+  margin: 0px;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.logo {
+  display: flex;
+  margin-right: 10px;
+  flex: 1.2;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 1vw;
+}
+main{
+  background-color: transparent;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  align-items: center;
+}
+#nav {
+  width: 100%;
+  top: 0;
+  position: sticky;
+  height: 100px;
+  transition: top 0.7s;
+}
+nav {
+  flex: 6.5;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #eee;
+  box-sizing: border-box;
+  padding: 12px 18px;
+  box-shadow: 0px 4px 7px #777;
+  z-index: 3;
+}
+
+.nav-sites {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.imagegallery, .members,  .calendar, .index, .reviews, .pints101, .feedback, .podcasts, .contactus {
+  text-decoration: none;
+  color: rgb(93, 93, 93);
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+}
+.logo-link {
+  text-decoration: none;
+  color:black;
+}
+
+.map {
+  text-decoration: none;
+  color: rgb(224, 203, 63);
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+  border-color:rgb(93, 93, 93);
+  border-style: solid;
+  border-left: transparent;
+  border-right: transparent;
+  border-top: transparent;
+  border-width: 1.5px;
+}
+
+.imagegallery:hover,  .calendar:hover, .index:hover, .reviews:hover, .pints101:hover, .feedback:hover, .podcasts:hover, .contactus:hover, .members:hover {
+  color: rgb(224, 203, 63);
+  border-color: rgb(93, 93, 93);
+}
+
+.logo-img {
+  width: 3%;
+}
+.close {
+  text-decoration: none;
+  color: rgb(93, 93, 93);
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+  border-style: solid;
+  border-color: rgb(224, 203, 63);
+  border-width: 2px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.close:hover {
+  border-color: rgb(93, 93, 93);
+  color: rgb(224, 203, 63);
+}
+.imagegallery, .reviews, .pints101, .feedback {
+  border-color: rgb(224, 203, 63);
+  border-style: solid;
+  border-left: transparent;
+  border-right: transparent;
+  border-top: transparent;
+  border-width: 1.5px;
+}
+
+#button {
+  flex: 1;
+  text-align: center;
+}
+
+#button img {
+  height: 60px;
+  width: 70px;
+}
+#button:hover {
+  cursor: pointer;
+}
+#slide-bar {
+  width: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  overflow-x: hidden;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  right: 0px;
+  background-color: #eee;
+  transition: 0.6s ease-out;
+  padding: 40px 0;
+  box-shadow: -4px 0px 7px #777;
+}
+#slide-bar ul {
+  flex-direction: column;
+}
+
+#slide-bar li {
+  display: block;
+  width: 100%;
+  flex: 1;
+  text-align: center;
+}
+
+.parallax {
+  background: url(Aberdeen.png) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+}
+.circle {
+  background: white;
+  display: block;
+ transform: translateY(20%);
+  margin-left: auto;
+  margin-right: auto;
+  height: 55%;
+  width: 30%;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+}
+.circle img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-top: 15%;
+  border-radius: 100%;
+}
+.circle p {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3vw;
+  margin-bottom: 10%;
+}
+.title-message {
+  height: 450px;
+  position: relative;;
+  border-style: solid;
+  border-color: #777;
+  border-left: #eee;
+  border-right: #eee;
+}
+.title-message h1 {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4vw;
+  color: rgb(224, 203, 63);
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 1px 0 black, 0 2px black, 2px 0 black, 0 1px black;
+}
+.parallax1 {
+  background: url(beerpub.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+  position: relative;
+}
+
+.parallax1 p {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 6vw;
+  font-family: "Pacifico", cursive;
+  color: rgb(224, 203, 63);
+  text-shadow: -1px 0 black, 0 5px black, 5px 0 black, 0 1px black;
+}
+.map-container {
+  height: 350px;
+  position: relative;
+  border-style: solid;
+  border-color: #777;
+  border-left: #eee;
+  border-right: #eee;
+}
+.map-container p{
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4vw;
+  color: rgb(224, 203, 63);
+  font-family: 'Patua One', cursive;
+  text-shadow: 2px 0 #777, 0 2px #777, 2px 0 #777, 0 2px #777;
+}
+.map-container i {
+  border: solid #777;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 40px;
+
+}
+.map-container .down-arrow {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position:absolute;
+  top: 65%;
+  left: 47%;
+
+}
+.parallax2 {
+  background: url(Aberdeen1.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1200px;
+  position: relative;
+
+}
+.google-map iframe{
+  position: absolute;
+  top: 13.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style:solid;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.google-map .map-background {
+  position:absolute;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background:rgb(134, 130, 130);
+  height: 810px;
+  width: 1400px;
+  opacity: 0.9;
+  border-radius: 200px;
+}
+.map-explaining {
+  border-top-style: solid;
+  border-top-color: #777;
+  display: flex;
+  justify-content: space-around;
+}
+.explaining1, .explaining2, .explaining3 {
+  margin: 3% auto;
+  box-shadow: 10px 11px 17px -3px rgba(0,0,0,0.75);
+  width: 400px;
+  height: 600px;
+  border-style: solid;
+  border-width: 1.5px;
+  transition: 0.4s ease-out;
+  border-radius: 20px;
+}
+.explaining1 img, .explaining2 img, .explaining3 img {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-radius: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  margin-bottom: 2%;
+
+}
+.explaining1 p, .explaining2 p, .explaining3 p {
+  text-align: center;
+  font-size: 2.5vw; 
+  font-family: "Staatliches", cursive;
+}
+.explaining1:hover, .explaining2:hover, .explaining3:hover {
+  transform: translateY(-10px);
+  
+}
+.explaining1:hover:before, .explaining2:hover:before, .explaining3:hover:before {
+  opacity: 1;
+}
+footer {
+  background-color: #eee;
+  padding: 12px 30px;
+  box-shadow: 0px -4px 7px #777;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer-text {
+  font-family: "Staatliches", cursive;
+  color: rgb(93, 93, 93);
+  flex: 4;
+}
+
+#link-container {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  align-items: center;
+}
+
+#link-container * {
+  flex: 1;
+}
+
+.social-link img {
+  width: 50px;
+  height: 50px;
+}
+
+@media only screen and (width: 500px) {
+  .circle {
+    background: white;
+    display: block;
+   transform: translateY(100%);
+    margin-left: auto;
+    margin-right: auto;
+    height: 30%;
+    width: 40%;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+  }
+  .circle img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 15%;
+    border-radius: 100%;
+  }
+  .circle p {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3vw;
+  }
+  .google-map iframe{
+    position: absolute;
+    top: 13.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-style:solid;
+    border-radius: 20px;
+    margin: auto;
+    width: 100%
+  }
+  .map-explaining {
+    border-top-style: solid;
+    border-top-color: #777;
+    justify-content: space-around;
+    display: block;
+  }
+  .down-arrow {
+    margin-left: -5%;
+    
+  };
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

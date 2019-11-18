@@ -1,0 +1,228 @@
+
+   body{
+    background: #eee;
+  } 
+
+.review-container {
+  padding: 5%;
+}
+  
+  .review {
+    width: 90vw;
+    overflow-x: auto;
+    display: flex;
+    height: 400px;
+    border-radius: 5px;
+  }
+  
+  .review-body {
+    flex: 5;
+  }
+  
+  .review-row {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    align-items: center;
+  }
+  
+  .review-title,
+  .profile-pic,
+  .rating {
+    flex: 1;
+  }
+  
+  .review-title,
+  .rating {
+    padding: 20px;
+  }
+  
+  .review-title {
+    font-size: 25px;
+    color: rgb(224, 203, 63);
+  }
+  
+  .profile-pic img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .review-text {
+    height: 300px;
+    background-color: #999;
+    padding: 20px;
+  }
+  
+  .review-img img {
+    flex: 1;
+    height: 400px;
+  }
+  
+  .rating {
+    display: flex;
+  }
+  
+  .rating img {
+    flex: 1;
+    height: 50px;
+    width: 50px;
+  }
+.imagegallery,  .map, .index, .reviews, .pints101, .feedback, .podcasts, .contactus, .members, .calendar {
+  text-decoration: none;
+  color: rgb(93, 93, 93);
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+}
+.reviews {
+  text-decoration: none;
+  color: rgb(224, 203, 63);
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(93, 93, 93);
+  border-bottom-width: 1.5px;
+}
+.imagegallery:hover,  .map:hover, .index:hover, .pints101:hover, .feedback:hover, .podcasts:hover, .contactus:hover, .members:hover, .calendar:hover {
+  color: rgb(224, 203, 63);
+  border-color: rgb(93, 93, 93);
+}
+.imagegallery, .map, .pints101, .feedback {
+  border-color: rgb(224, 203, 63);
+  border-style: solid;
+  border-left: transparent;
+  border-right: transparent;
+  border-top: transparent;
+  border-width: 1.5px;
+}
+.close {
+  text-decoration: none;
+  color: rgb(93, 93, 93);
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+  border-style: solid;
+  border-color: rgb(224, 203, 63);
+  border-width: 2px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.close:hover {
+  border-color: rgb(93, 93, 93);
+  color: rgb(224, 203, 63);
+}
+.logo-img {
+  width: 3%;
+}
+.logo-link {
+  text-decoration: none;
+  color:black;
+}
+.logo {
+  display: flex;
+  margin-right: 10px;
+  flex: 1.2;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 1vw;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  align-items: center;
+}
+#nav {
+  width: 100%;
+  top: 0;
+  position: sticky;
+  height: 100px;
+  transition: top 0.7s;
+}
+nav {
+  flex: 6.5;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #eee;
+  box-sizing: border-box;
+  padding: 12px 18px;
+  box-shadow: 0px 4px 7px #777;
+  z-index: 3;
+}
+
+.nav-sites {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+
+main iframe {
+  margin: 100px;
+  box-shadow: 0px 1px 3px #eee;
+}
+main {
+  background-color: rgb(199, 197, 197);
+}
+
+.logo img {
+  width: 40px;
+}
+#button {
+  flex: 1;
+  text-align: center;
+}
+
+#button img {
+  height: 60px;
+  width: 70px;
+}
+#button:hover {
+  cursor: pointer;
+}
+
+#slide-bar {
+  width: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  overflow-x: hidden;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  right: 0px;
+  background-color: #eee;
+  transition: 0.6s ease-out;
+  padding: 40px 0;
+  box-shadow: -4px 0px 7px #777;
+}
+#slide-bar ul {
+  flex-direction: column;
+}
+
+#slide-bar li {
+  display: block;
+  width: 100%;
+  flex: 1;
+  text-align: center;
+}
+
+.review-container {
+  font-family: "Staatliches", cursive;
+}
+.review {
+  box-shadow: 10px 10px 16px -1px rgba(0,0,0,0.75);
+  transition: 0.4s;
+}
+.review:hover {
+  transform: translateY(-10px);
+}

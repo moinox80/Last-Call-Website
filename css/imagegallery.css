@@ -1,0 +1,122 @@
+
+* {
+  margin: 0px;
+  padding: 0%;
+  box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    font-family: Arial;
+    background: url(imagegalleryimgs/rgu.jfif);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .gallery-container {
+    margin: 0 auto;
+    width: 50%;
+    background: rgb(192, 191, 191);
+    border-style: solid ; 
+    border-width: 1.5px;
+    border-radius: 100px;   
+    margin-top: 5%;
+    margin-bottom: 5%;    
+  }
+.gallery{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.gallery-title {
+  text-align: center;
+  font-size: 3vw;
+  margin-top: 2%;
+  font-family: "Staatliches", cursive;
+}
+  .gallery img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 5px;
+    filter: blur(5px);
+    transition: 1s;
+    border-radius: 20px;
+  }
+
+  .gallery img:hover{
+    filter:blur(0px);
+    transform: scale(1.05);
+  }
+
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  
+
+
+.imagegallery,  .map, .index, .reviews, .pints101, .feedback, .podcasts, .contactus, .members, .calendar {
+  text-decoration: none;
+  color: rgb(93, 93, 93);
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+}
+.imagegallery {
+  text-decoration: none;
+  color: rgb(224, 203, 63);
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+  border-bottom-style: solid;
+  border-bottom-width: 1.5px;
+  border-bottom-color: rgb(93, 93, 93);
+}
+.map:hover, .index:hover, .reviews:hover, .pints101:hover, .feedback:hover, .podcasts:hover, .contactus:hover, .members:hover, .calendar:hover {
+  color: rgb(224, 203, 63);
+  border-color: rgb(93, 93, 93);
+}
+.reviews, .map, .pints101, .feedback {
+  border-color: rgb(224, 203, 63);
+  border-style: solid;
+  border-left: transparent;
+  border-right: transparent;
+  border-top: transparent;
+  border-width: 1.5px;
+}
+.close {
+  text-decoration: none;
+  color: rgb(93, 93, 93);
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+  border-style: solid;
+  border-color: rgb(224, 203, 63);
+  border-width: 2px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.close:hover {
+  border-color: rgb(93, 93, 93);
+  color: rgb(224, 203, 63);
+}
+.logo-img {
+  width: 3%;
+}
+.logo-link {
+  text-decoration: none;
+  color:black;
+}
